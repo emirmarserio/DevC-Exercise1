@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Exercise 1</title>
+    <style>
+        .bio {
+            border: 2px solid black;
+        }
+
+        img {
+            width: 200px;
+            padding: 12px;
+
+        }
+
+        .col-md-6 {
+            padding: 12px;
+            text-align: center;
+            text-shadow: 3px 2px wheat;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        ul {
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: red;
+            -webkit-animation-name: example;
+            -webkit-animation-duration: 4s;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+
+        @-webkit-keyframes example {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: blue;
+            }
+
+            100% {
+                background-color: green;
+            }
+        }
+
+        @keyframes example {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: blue;
+            }
+
+            100% {
+                background-color: green;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <center>
-        <h1>Biodata</h1>
-    </center>
+    <div class="container bio">
+        <h1 style="text-align: center">Biodata</h1>
+        <br />
+        <div class="row">
+            <div class="col-md-3">
+                <img src="https://cdn3.iconfinder.com/data/icons/avatars-collection/256/32-512.png" alt="Google"
+                    class="center">
+            </div>
+            <div class="col-md-6">
+                <p>Nama: Emir</p>
+                <p>Umur: 20</p>
+                <p>Profesi: Mahasiswa</p>
+            </div>
+                <h2>Hobi: </h2>
+                <ul>Baca Buku</ul>
+                <ul>Ngoding</ul>
+        </div>
 </body>
+
 </html>
